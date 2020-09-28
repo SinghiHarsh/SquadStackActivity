@@ -17,4 +17,6 @@ Attached is the screenshot of my environment.
 #### https://ibb.co/VLTTJCQ
 
 #### Open Sublime text editor with the cloned directory of my project.
-#### In Sublime editor open the Tools dropdown select Build System, then select C++ Single File, in the same dropdown select build with and then click on C++ single file -Run.
+#### In Sublime editor open the Tools dropdown select "Build System", then select "C++ Single File", in the same dropdown select "build with" and then click on "C++ single file -Run".
+#### Shortcut to run the application, Ctrl + B.
+
