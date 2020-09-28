@@ -8,7 +8,7 @@ Create_parking_lot - Allocation of slots based on the available space.
 Park               - Allocation of the nearest slot available which the vehicle registration number.
 Leave              - Free up space for the particular vehicle based on the vehicle registration number,check has to performed if the slot is vacant or occupied. 
 
-Following are the methods to retrieve information collected while making space for parking.
+Following are the definitions to retrieve information collected while making space for parking.
 
 NOTE: 
 Following information cannot be generated 
@@ -19,6 +19,21 @@ Slot_number_for_car_with_number - Returns the vehicle slot number parked based o
 Slot_numbers_for_driver_of_age - Returns the slot numbers based on the drivers age.
 Vehicle_registration_number_for_driver_of_age - Returns all the parked vehicles registration number parked based on age.
 
+Following are the definitions used,
+
+getUserInfoBasedOnInput() - This mehtod translates the input 
+							command into the required data form in a list.
+
+getDriverSlotInfoAge() - This method is used to check if slots are allocated, 
+						 if allocated based on the command "Slot_numbers_for_driver_of_age" 
+						 or "Vehicle_registration_number_for_driver_of_age" fetches result.
+
+getRegistrationInfo() - This method is used to find the slot number based on the 
+						registration number provided.
+
+removeRegisteredSlotInfo() - This method removes the slot blocked if available 
+						and updates all the required data structures to keep them in 
+						sync with the application.
 
 */
 
