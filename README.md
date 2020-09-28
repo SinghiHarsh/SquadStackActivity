@@ -1,5 +1,4 @@
 # Parkinglot Application
-#### The entire application is written in C++, using the STL commands for data handling and manipulation along with file systems for handling input & output.
 
 #### Following are the instructions required to run the application.
 
