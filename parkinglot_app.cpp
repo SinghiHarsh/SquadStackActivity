@@ -87,6 +87,7 @@ bool removeRegisteredSlotInfo(unordered_map<int,vector<pair<int,string>>> & driv
 		}
 		else {
 			slots.erase(slots.begin() + removeIndex);
+			return true;
 		}
 	}
 	else return false;
@@ -105,9 +106,15 @@ int main(){
 		3. Unallocation of slots.
 	*/
 	
+	/* Allocate available slots,
+		Each slot represents Vehicle number and driver age.	
+	*/
 	vector<pair<string,int>> totalSlots;
 	totalSlots.push_back({"-1",-1});
-
+	/*
+		Allocate driver age as the key,with the values being stored 
+		in a list containing pair which holds slot allocated and Vehicle number. 
+	*/
 	unordered_map<int,vector<pair<int,string>>> driverSlots;
 
 	while(cin>>command){
@@ -116,9 +123,6 @@ int main(){
 			getline(cin,slots);
 			int k = stoi(slots);
 
-			/* Allocate available slots,
-			   Each slot represents Vehicle number and driver age.	
-			*/
 			for(int i = 0; i < k; ++i){
 				totalSlots.push_back({"-1",-1});
 			}
@@ -210,11 +214,11 @@ int main(){
 				cout<<"Invalid slot number"<<endl;
 			}
 			if(totalSlots[k].first == "-1" && totalSlots[k].second == -1){
-				cout<<"This slot has not been allocated"<<endl;
+				cout<<"The slot,which you are trying to remove is not allocated"<<endl;
 			}
 			else {
-				int age = totalSlots[k].second;
 				string registrationNumber = totalSlots[k].first;
+				int age = totalSlots[k].second;
 				bool removed = removeRegisteredSlotInfo(driverSlots,age,registrationNumber);
 				if(removed){
 					cout<<"Slot number "<<k<<" vacated, the car with vehicle registration number "<<registrationNumber<<" left the space, the driver of the car was of age "<<age<<endl;
