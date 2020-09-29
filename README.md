@@ -9,7 +9,7 @@
 ##### For MacOS: There is no MinGW for macOS. You need to install Xcode from the Mac App Store instead. Once it's installed start it, and allow it to install the command line tools. Finally, test that clang (the compiler on macOS) works in a terminal.
 
 
-### For best experience install Sublime following is the link for downloading it, both fro Ubuntu & MacOS.
+### For best experience install Sublime following is the link for downloading it, both for Ubuntu & MacOS.
 #### https://www.sublimetext.com/3
 
 Attached is the screenshot of my environment.
