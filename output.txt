@@ -4,6 +4,8 @@ Car with vehicle registration number PB-01-HH-1234 has been parked at slot 2
 1 2 
 Car with vehicle registration number PB-01-TG-2341 has been parked at slot 3
 2
+Slot number 1 vacated, the car with vehicle registration number KA-01-HH-1234 left the space, the driver of the car was of age 21
 Slot number 2 vacated, the car with vehicle registration number PB-01-HH-1234 left the space, the driver of the car was of age 21
-Car with vehicle registration number HR-29-TG-3098 has been parked at slot 2
-No slot information available for the driver age provided
+Slot number 3 vacated, the car with vehicle registration number PB-01-TG-2341 left the space, the driver of the car was of age 40
+Car with vehicle registration number HR-29-TG-3098 has been parked at slot 1
+1

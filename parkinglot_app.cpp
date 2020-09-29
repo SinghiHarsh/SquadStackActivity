@@ -34,7 +34,6 @@ getRegistrationInfo() - This method is used to find the slot number based on the
 removeRegisteredSlotInfo() - This method removes the slot blocked if available 
 						and updates all the required data structures to keep them in 
 						sync with the application.
-
 */
 
 
@@ -224,6 +223,9 @@ int main(){
 					cout<<"Slot number "<<k<<" vacated, the car with vehicle registration number "<<registrationNumber<<" left the space, the driver of the car was of age "<<age<<endl;
 					totalSlots[k] = {"-1",-1};
 
+				}
+				else {
+					cout<<"The slot is already empty or does not exists, please try again!"<<endl;
 				}
 			}
 
